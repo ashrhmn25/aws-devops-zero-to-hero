@@ -8,3 +8,4 @@ def hello():
 
 if __name__ == '__main__':
     app.run()
+# To final check of aws code build and code deploy are working or not.
