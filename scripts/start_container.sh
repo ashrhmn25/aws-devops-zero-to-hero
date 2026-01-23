@@ -17,4 +17,4 @@ docker pull "$DOCKER_USERNAME/$REPO_URL:latest"
 
 # 4. Run the container
 echo "Starting new container..."
-docker run -d -p 5000:5000 --name flask-app "$REPO_URL:latest"
+docker run -d -p 5000:5000 --name flask-app "$DOCKER_USERNAME/$REPO_URL:latest"
