@@ -12,8 +12,8 @@ echo "Logging into Docker Hub..."
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 # 3. Pull the latest image
-echo "Pulling image: $REPO_URL"
-docker pull "$REPO_URL:latest"
+echo "Pulling image: $DOCKER_USERNAME/$REPO_URL"
+docker pull "$DOCKER_USERNAME/$REPO_URL:latest"
 
 # 4. Run the container
 echo "Starting new container..."
